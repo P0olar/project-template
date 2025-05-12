@@ -61,17 +61,9 @@ header {
   border-radius: 25px;
 }
 
-.categorias-div {
-  display: 'flex';
-  gap: '20px';
-}
-
-.div-area {
-  border: '1px solid #ccc';
-  padding: '10px';
-}
-
-.categoria-img {
-  width: '200px';
-  height: 'auto';
+.categorias {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
