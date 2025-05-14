@@ -8,7 +8,7 @@ const Categoria = () => {
         <div className='categorias'>
             <div>
                 <h1>Categorias</h1>
-                <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '20px', marginTop: '2em', flexWrap: 'wrap' }}>
                     {categoriasExibidas.map((categoria, index) => (
                         <div key={index} style={{ border: '1px solid #ccc', padding: '10px' }}>
                             <h2>{categoria.nomeCategoria}</h2>

@@ -73,8 +73,19 @@ header {
 }
 
 .produtos {
-  display: flex;
+  margin-top: 3em;
+  font-weight: bolder;
+}
+
+.produtos-titulo {
+  font-size: 2rem;
+}
+
+.produtos-list {
+  text-align: center;
+}
+
+.produtos-table {
   display: flex;
   justify-content: center;
-  text-align: center;
 }
