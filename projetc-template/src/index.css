@@ -71,3 +71,10 @@ header {
 .home {
   text-align: center;
 }
+
+.produtos {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
