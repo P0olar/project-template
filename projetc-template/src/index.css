@@ -81,11 +81,35 @@ header {
   font-size: 2rem;
 }
 
-.produtos-list {
-  text-align: center;
+.parent {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 75em;
+  display: flex;
+  flex-direction: column;
 }
 
-.produtos-table {
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  border: 1px solid black;
+  width: auto;
+  height: 85px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+
+.div2 {
+  width: 100%;
+  max-width: 50em;
+}
+
+.produtos-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: .1em 0em 0em 4em;
 }

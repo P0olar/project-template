@@ -4,31 +4,20 @@ import { Link } from 'react-router'
 
 const Produtos = () => {
     return (
-        <div className='produtos-list'>
-            <p>Produtos</p>
-            <div className='produtos-table'>
-                <table border='.1'>
-                    <tr>
-                        <th></th>
-                        <th>Imagem</th>
-                        <th>Titulo Produto</th>
-                        <th>SKU</th>
-                        <th>Preço</th>
-                        <th>Marca</th>
-                    </tr>
-                    {produtos.map((produtos, index) => (
-                        <tr key={index}>
-                            <td><input type="checkbox" name="" id="" /></td>
-                            <td><img src={produtos.imgProd[0]} alt={produtos.nomeCategoria} style={{ width: 'auto', height: '80px' }} /></td>
-                            <td>{produtos.titulo}</td>
-                            <td>{produtos.sku}</td>
-                            <td>R$ {produtos.preco.toFixed(2).replace('.', ',')}</td>
-                            <td>{produtos.marca}</td>
-                        </tr>
-                    ))}
-
-                </table>
+        <div className='container'>
+            <div className="parent">
+                {produtos.map((produtos, index) => (
+                    <div className='produtos-container' key={index}>
+                        <div className="div6"><input type="checkbox" value={produtos.userRefID} id={produtos.id} /></div>
+                        <div className="div1"><img src={produtos.imgProd[0]} alt="" style={{height: '80px', width: '80px', objectFit: 'contain'}} /></div>
+                        <div className="div2">{produtos.titulo}</div>
+                        <div className="div3">{produtos.sku}</div>
+                        <div className="div4">R$ {produtos.preco.toFixed(2).replace('.',',')}</div>
+                        <div className="div5">{produtos.marca}</div>
+                    </div>
+                ))}
             </div>
+
         </div>
     )
 }
