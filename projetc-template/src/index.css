@@ -82,9 +82,8 @@ header {
 }
 
 .parent {
-  border: 1px solid black;
   width: 100%;
-  max-width: 75em;
+  max-width: 80em;
   display: flex;
   flex-direction: column;
 }
@@ -94,10 +93,10 @@ header {
 .div3,
 .div4,
 .div5,
-.div6 {
-  border: 1px solid black;
+.div6,
+.div7 {
   width: auto;
-  height: 85px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
@@ -107,9 +106,29 @@ header {
   max-width: 50em;
 }
 
+.div6 {
+  width: 2em;
+  margin: 0rem 0rem 0rem 1rem;
+  justify-content: center;
+}
+
+.div6-input {
+  padding: 1em;
+}
+
+
+.div3,
+.div4,
+.div5,
+.div7 {
+  width: 10em;
+}
+
 .produtos-container {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin: .1em 0em 0em 4em;
+  margin: .25em 0em .25em 1.5em;
+  border: 1px solid black;
+  border-radius: 15px;
 }
