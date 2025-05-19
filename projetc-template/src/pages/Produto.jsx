@@ -9,9 +9,15 @@ const Produto = () => {
 
     return (
         <>
-            <div>{ProdutoSelect.titulo}</div>
-            <form action="" method="post"></form>
-            <input type="text" value={ProdutoSelect.titulo} id="" />
+            <div><p style={{ textAlign: 'center' }}>ID do Pooduto <br /> {ProdutoSelect.id}</p></div>
+            <form action="" method="post" style={{textAlign: 'center'}}>
+                <input type="text" value={ProdutoSelect.titulo} id="titulo" /><br />
+                <input type="text" value={ProdutoSelect.sku} id='sku' /><br />
+                <input type="text" value={ProdutoSelect.preco} id="preco" /><br />
+                <input type="text" value={ProdutoSelect.marca} /> <br />
+                <textarea value={ProdutoSelect.sobre} id="sobre" /><br /><br />
+                <input type="submit" value="Salvar Alterções" />
+            </form>
         </>
     )
 }
